@@ -5,10 +5,10 @@ import AutomationTest from '../../page-objects/cyberfuse.page';
  *
  * @param {string} name Image name
  */
-async function DownloadImage(name) {
-    await browser.pause(500);
+async function DownloadImage(name, delay) {
+    await browser.pause(delay);
     await AutomationTest.btnTakeScreenshot.click();
-    await browser.pause(500);
+    await browser.pause(delay);
     const imgSource = await $('img');
     const img = await imgSource.getAttribute('src');
     const data = await img.replace(/^data:image\/\w+;base64,/, '');

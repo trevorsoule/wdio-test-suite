@@ -16,7 +16,7 @@ async function ImageCompare(sc1, sc2, compare, incre) {
     const diff = new PNG({width, height});
       
     let isDiff = pixelmatch(img1.data, img2.data, diff.data, width, height, {threshold: 0.0});
-    fs.writeFileSync('screenshots/diff' + incre + '.png', PNG.sync.write(diff));
+    fs.writeFileSync('screenshots/diff-' + incre + '.png', PNG.sync.write(diff));
         expect(isDiff == 0).toBe(compare);
       
 } export default ImageCompare;
