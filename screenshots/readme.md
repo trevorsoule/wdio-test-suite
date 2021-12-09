@@ -1,0 +1,2 @@
+## Comparison Screenshots
+#### This folder will contain screenshots generated during the tests that are compared. The "diff1" and "diff2" are generated using the pixelmatch library and show the differences between files.

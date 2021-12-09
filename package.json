@@ -1,0 +1,23 @@
+{
+  "name": "test-automation",
+  "version": "1.0.0",
+  "repository": "git@github.com:",
+  "scripts": {
+    "test:automation": "wdio automation/config/wdio.conf.js"
+  },
+  "dependencies": {
+    "@wdio/cli": "^7.16.10",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "*",
+    "babel-register": "^6.26.0",
+    "image-downloader": "^4.0.3",
+    "pixelmatch": "^5.2.1"
+  },
+  "devDependencies": {
+    "@wdio/local-runner": "^7.16.10",
+    "@wdio/mocha-framework": "^7.16.6",
+    "@wdio/spec-reporter": "^7.16.9",
+    "chromedriver": "*",
+    "wdio-chromedriver-service": "^7.2.2"
+  }
+}
