@@ -43,7 +43,6 @@ describe('3D Automation Test', () => {
         it('Then: Take a screenshot of the image', async () => {
           await pageLoad.waitForPageReady();
           await DownloadImage('side-view.png');
-          await ImageCompare('screenshots/side-view.png', 'automation/utils/baseline/baseline-side-view.png', true, 1);
         });
     });
 
@@ -61,7 +60,7 @@ describe('3D Automation Test', () => {
 // This test verifies that there are differences between the original image, and the image that has bump and lighting enabled
     describe('Test: Compares the two saved images to verify the changes were properly made', () => {
         it('Final: I compare the two screenshots', async () => {
-            await ImageCompare('screenshots/side-view.png', 'screenshots/side-view-bump-lighting.png', false, 2);
+            await ImageCompare('screenshots/side-view.png', 'screenshots/side-view-bump-lighting.png', false, 1);
         });
     });
 });
